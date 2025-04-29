@@ -12,6 +12,8 @@ namespace HelloWorld_
         {
             Console.WriteLine("Привет, Мир!");
             Console.ReadLine();
+            Console.WriteLine("Calculator. Enter your value of parameter: ");
+            int a = int.Parse(Console.ReadLine());
         }
     }
 }
