@@ -86,18 +86,18 @@ namespace HelloWorld_
         }
         static void MakeANewEmployeer (ref List<Employee> employees)
         {
-            Employee employeere = new Employee();
+            
             Console.Write("Введите ФИО нового сотрудника: ");
-            employeere.Name = Console.ReadLine();
+            string name = Console.ReadLine();
             Console.SetCursorPosition(1, 4);
             Console.Write("Введите специальность нового сотрудника: ");
-            employeere.Speciality = Console.ReadLine();
+            string speciality = Console.ReadLine();
             Console.SetCursorPosition(1, 6);
             Console.Write("Введите З/П нового сотрудника: ");
             bool salaryIsCorrect = int.TryParse(Console.ReadLine(), out int salary);
             if (salaryIsCorrect)
             {
-                employeere.Salary = salary;
+                Employee employeere = new Employee(name, speciality, salary);
                 employees.Add(employeere);
                 Console.SetCursorPosition(1, 8);
                 Console.WriteLine("Сотрудник добавлен!");

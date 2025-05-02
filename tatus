@@ -1,0 +1,22 @@
+[33mcommit 7e8f4940ce1d752cd11a7fe7604c36c11e14f7ca[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Глеб Мисюра <gleb.misyura2@mail.ru>
+Date:   Tue Apr 29 17:35:51 2025 +0700
+
+    дописал калькулятор
+
+[1mdiff --git a/HelloWorld!/Program.cs b/HelloWorld!/Program.cs[m
+[1mindex 016a976..e763827 100644[m
+[1m--- a/HelloWorld!/Program.cs[m
+[1m+++ b/HelloWorld!/Program.cs[m
+[36m@@ -12,8 +12,10 @@[m [mnamespace HelloWorld_[m
+         {[m
+             Console.WriteLine("Привет, Мир!");[m
+             Console.ReadLine();[m
+[31m-            Console.WriteLine("Calculator. Enter your value of parameter: ");[m
+[32m+[m[32m            Console.Write("Calculator. Enter your value of parameter: ");[m
+             int a = int.Parse(Console.ReadLine());[m
+[32m+[m[32m            Console.WriteLine($"\nYour parameter in square {a*a}. ");[m
+[32m+[m[32m            Console.ReadLine();[m
+         }[m
+     }[m
+ }[m

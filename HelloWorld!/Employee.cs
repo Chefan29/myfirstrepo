@@ -12,5 +12,11 @@ namespace HelloWorld_
         public string Name {  get; set; }
         public string Speciality {  get; set; }
         public int Salary {  get; set; }
+        public Employee(string name, string speciality, int salary) 
+        {
+            Name = name;
+            Speciality = speciality;
+            Salary = salary;
+        }
     }
 }
